@@ -119,3 +119,9 @@ config THERMAL_MIN_TEMP_PROTECT
          This enable the protection under critical low temperature enviroment.
          Device would auto shutdown when thermal sensor senses the temperature
          is lower than the critical low temperature.
+
+config THERMAL_MONITOR
+       tristate "Thermal monitor and throttling for MSM8X60"
+       depends on THERMAL
+       help
+         Enable thermal throttling for cpu.
